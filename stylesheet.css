@@ -1,0 +1,2115 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+body{
+  width:100%;
+}
+ul{
+  list-style-type: none;
+}
+
+.black{
+  background-color:rgba(0, 0, 0, 0.5);
+  height: 4000px;
+  margin-top: 120px;
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+}
+.top{
+  background-color: rgba(204,0,0,0.7);
+  border-radius: 40px;
+  color:white;
+  padding: 15px 20px;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  z-index: 1000;
+}
+.top p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.top i{
+  background-color: white;
+  color:#cc0000;
+  border-radius: 50%;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  width: 20px;
+}
+.six-topics-two{
+  background-color: #F7F7F7;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  text-align: center;
+  width: 1263px;
+  z-index: 1000;
+}
+.two-container{
+  display: inline-block;
+  text-align: center;
+}
+.logo{
+  background-color: white;
+  border-radius: 30px;
+  display: inline-block;
+  height: 30px;
+  padding: 15px 15px 10px;
+  transition: all 0.3s;
+  width: 150px;
+}
+.logo:hover{
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+}
+.logo a{
+  display:block;
+  background-image: url("https://www.japanpost.jp/images/logo_fixed.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25px;
+  margin: 0 auto;
+  width: 130px;
+}
+.six-topics-two ul {
+  border: solid 1px #E9EAEB;
+  border-bottom: none;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0 3px;
+  padding: 0;
+}
+.six-topics-two{
+
+}
+.six-topics-two ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.six-topics-two ul li {
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+.six-topics-two ul li a{
+  background: #fff;
+  border-left: 1px solid #CC0000;
+  color: #333;
+  display: block;
+  padding: 10px 23px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: border 0.2s;
+}
+.six-topics-two ul li a i{
+  display: block;
+  color:#CC0000;
+  font-size: 16px;
+}
+.six-topics-two ul li a:hover{
+  border-bottom:solid 5px #FDB8B8!important;
+  margin-bottom: -5px!important;
+}
+.info a:first-child{
+  border-left: none;
+}
+.six-topics-two ul li a:hover{
+  opacity: 0.8;
+}
+.six-topics-two input{
+  margin-left: 15px;
+  padding: 5px 30px 5px 10px;
+  position: relative;
+  top:-20px;
+  width: 85px;
+}
+header{
+  overflow: hidden;
+  width: 100%;
+}
+.header-container{
+  min-width: 1000px;
+}
+.red-border{
+  background-color: #CB0002;
+  height: 17px;
+  position: relative;
+  width: 100%;
+}
+.red-border i{
+  display: none;
+}
+.header-left{
+  background-image: url("https://www.japanpost.jp/images/logo_bk.png");
+  background-repeat: no-repeat;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  width: 500px;
+}
+.header-left{
+  display: inline-block;
+  padding-top:15px;
+  padding-left:33px;
+}
+.header-right{
+  float: right;
+  padding-right: 33px;
+}
+.header-right ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0;
+}
+.header-right ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-right ul li {
+  float: left;
+  border-left: 1px solid #474747;
+}
+.header-right ul li:first-child {
+  border-left: none;
+}
+.header-right ul li a {
+  color:#4A77C1;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 0 14px;
+  text-decoration: none;
+  text-align: center;
+}
+.header-right ul li a:hover {
+  float: right;
+  text-decoration: underline;
+}
+.header-a{
+  background-color: #37ABFC;
+  color:white;
+  padding: 4px 10px;
+  position: relative;
+  top:-2px;
+}
+header input{
+  float: right;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 4px 0px 6px 8px;
+  width: 185px;
+}
+.clear{
+  clear: both;
+}
+.red-border a{
+  display: none;
+}
+.modal-sm{
+  display: none;
+}
+/*-----------------------------------------------------*/
+@media(max-width:768px){
+  .black{
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 2000px;
+    margin-top: 0px;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 90;
+    width: 100%;
+  }
+  .six-topics-two{
+    display: none!important;
+  }
+  header{
+    position: fixed;
+    top:0;
+    z-index: 1000;
+  }
+  .header-container{
+    min-width: auto;
+    text-align: center;
+  }
+  .red-border{
+    background-color: #CB0002;
+    height: 40px;
+    position: relative;
+    width: 100%;
+  }
+  .red-border i{
+    color:white;
+    display: inline-block;
+    float: right;
+    font-size: 26px;
+    padding-top: 5px;
+  }
+  .red-border a{
+    display: inline-block;
+    padding-top: 10px;
+  }
+  .red-border img{
+    width: 100px;
+  }
+  .header-left{
+    display: none;
+  }
+  .header-right{
+    display: none;
+  }
+  .modal-sm{
+    display: block;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 110;
+  }
+  .shadow{
+    background-color: rgba(0,0,0,0.5);
+    height: 103%;
+    position: relative;
+    width: 100%;
+    z-index: 90;
+  }
+  .modal-sm-con{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-left: 10%;
+    position: relative;
+    width: 90%;
+    z-index: 110;
+  }
+  .modal-sm-input{
+    background-color: #EBEBEB;
+    border-bottom: solid 1px #cc0000;
+    border-left: solid 1px #cc0000;
+    padding: 10px 0;
+  }
+  .modal-sm-input input{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 90%;
+  }
+  .modal-sm ul li:not(:first-child){
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .modal-sm-six ul li:first-child{
+    padding: 15px;
+  }
+  .modal-sm-six ul li:not(:first-child){
+    background-color: #EFEFEF;
+    border-bottom: solid 1px white;
+    padding: 17.5px 15px 17.5px 20px;
+  }
+  .modal-sm-six ul li:hover:not(:first-child){
+    opacity: 0.7;
+  }
+  .modal-sm-six ul li i{
+    color:#cc0000;
+    float: right;
+  }
+  .modal-sm-four{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .modal-sm-four a{
+    padding: 15px 0;
+  }
+  .modal-sm-four a:hover{
+    opacity: 0.8;
+  }
+  .modal-sm-four a:first-child{
+    background-color: #cc0000;
+    border-bottom: solid 1px white;
+    box-sizing: border-box;
+    color:white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding-left: 30px;
+    text-align: left;
+    width: 100%;
+  }
+  .modal-sm-four a:not(:first-child){
+    background-color: #cc0000;
+    box-sizing: border-box;
+    color:white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    width: 33.3%;
+  }
+  .modal-sm-four a:nth-child(3){
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+  }
+  .active{
+    background-color: #FFEEEE;
+    color:#cc0000;
+  }
+}
+/*-----------------------------------------------------*/
+.modal{
+  margin: 0 auto;
+  position: relative;
+  width: 1190px;
+}
+.modal-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  margin: 0 auto;
+  position: absolute;
+  width: 1190px;
+  z-index: 100;
+}
+.one{
+  background-color: white;
+  height: 400px;
+}
+.two{
+  background-color: red;
+}
+.three{
+  background-color: blue;
+}
+.four{
+  background-color: green;
+}
+.five{
+  background-color: yellow;
+}
+.six{
+  background-color: pink;
+}
+.modal-wrap-left{
+  background-image:url('https://www.japanpost.jp/images/megadrop_corporate.png');
+  background-position: center;
+  height: 400px;
+  width:254px;
+}
+.modal-wrap-left::before{
+  content: ' ';
+  transition: all 0.5s;
+}
+.modal-wrap-left:hover::before{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  width: 254px;
+}
+.modal-wrap-left a{
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.modal-wrap-left a:before{
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: 0.5s;
+}
+.modal-wrap-left a:hover::before{
+  width: 90%;
+}
+.modal-wrap-left a p{
+  color:white;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 28px;
+  margin-left: 15px;
+}
+.modal-wrap-left a p i{
+  margin-right: 10px;
+}
+.modal-wrap-center{
+  display: inline-block;
+  height: 400px;
+  padding-top: 10px;
+  width: 444px;
+}
+.modal-wrap-center ul{
+  border-right: solid 1px #B5B5B5;
+}
+.modal-wrap-center li{
+  border: solid 1px #B5B5B5;
+  height: 80px;
+  margin: 10px auto;
+  width: 400px;
+}
+.modal-wrap-center a{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  line-height: 18px;
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 100%;
+}
+.modal-three a{
+  padding-top: 20px;
+}
+.modal-wrap-center a i{
+  color:#CC0000;
+  padding-right: 10px;
+}
+.right-three{
+  position: relative;
+  top: -9px;
+}
+.modal-wrap-center a p{
+  display: inline-block;
+}
+.modal-wrap-center a p:hover{
+  text-decoration: underline;
+}
+.modal-one{
+  background-image: url("https://www.japanpost.jp/images/megadrop_corporate_menu01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-two{
+  background-image: url("https://www.japanpost.jp/images/megadrop_corporate_menu02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-three{
+  background-image: url("https://www.japanpost.jp/images/megadrop_corporate_menu04.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-four{
+  background-image: url("https://www.japanpost.jp/images/megadrop_corporate_menu03.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modal-wrap-right{
+  width: 435px;
+}
+.modal-wrap-right ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-left: 20px;
+  width: 435px;
+}
+.modal-wrap-right li{
+  border-bottom: dotted 1px #DEDEDE;
+  box-sizing: border-box;
+  height: 50px;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-left: 13px;
+  padding-right: 15px;
+  width: 45%;
+}
+.modal-wrap-right li a{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  display: flex;
+}
+.modal-wrap-right li a i{
+  color:#CC0000;
+  display: inline-block;
+  padding-right: 10px;
+}
+.modal-wrap-right li a p{
+  display: inline-block;
+}
+.modal-wrap-right a p:hover{
+  text-decoration: underline;
+}
+.cross{
+  position: relative;
+  width: 57px;
+}
+.cross:hover{
+  opacity: 0.7;
+}
+.cross p{
+  color:#cb0002;
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  top: 47px;
+  left:12px;
+}
+.modal-second{
+  position: fixed;
+  top:75px;
+  left: 35px;
+  z-index: 200;
+}
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+.six-topics{
+  background-color: #F7F7F7;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  overflow: hidden;
+  position: relative;
+  z-index: 95;
+}
+.six-container{
+  min-width: 1200px;
+  text-align: center;
+}
+.six-topics ul {
+  border: solid 1px #E9EAEB;
+  border-bottom: none;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0 3px;
+  padding: 0;
+}
+.six-topics ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.six-topics ul li {
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+.six-topics ul li a{
+  background: #fff;
+  border-left: 1px solid #CC0000;
+  color: #333;
+  display: block;
+  padding: 10px 48px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: border 0.2s;
+}
+.six-topics ul li a i{
+  display: block;
+  color:#CC0000;
+  font-size: 16px;
+}
+.six-topics ul li a:hover{
+  border-bottom:solid 5px #FDB8B8!important;
+  margin-bottom: -5px!important;
+}
+.info a:first-child{
+  border-left: none;
+}
+.six-topics ul li a:hover{
+  opacity: 0.8;
+}
+.slick-wrap{
+  overflow: hidden;
+  width: 100%;
+}
+.slick{
+  display: block;
+  min-width: 1200px;
+  width: 100%;
+}
+.slick img{
+  height: 450px;
+  width: 100%;
+}
+.slick-prev{
+  left: 67px!important;
+  position: relative;
+  z-index: 10;
+}
+.slick-next{
+  right: 67px!important;
+}
+.slick-slide{
+  background-color: rgb(0, 0, 0);
+}
+.slick-slide img{
+  display: block;
+  opacity: 0.5;
+}
+.slick-current img{
+  opacity: 1.0;
+}
+.slick2{
+  display: none!important;
+}
+/*-------------------------------------------------*/
+@media(max-width:768px){
+  .six-topics{
+    display: none;
+  }
+  .slick-wrap{
+    background-color: #F7F7F7;
+    margin-top: 40px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .slick{
+    display: none!important;
+  }
+  .slick2{
+    display: block!important;
+  }
+  .slick2 img{
+    width: 100%;
+  }
+  .slick-next,.slick-prev{
+    display: none!important;
+  }
+}
+/*--------------------------------------------------*/
+.news{
+  background-color: #F7F7F7;
+  margin-top: 30px;
+  overflow: hidden;
+  padding-bottom: 60px;
+  width: 100%;
+}
+.news-container h1{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.news-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 1200px;
+}
+.news-container h1{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+}
+.news-left{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  width: 820px;
+}
+.news-left ul{
+  border-bottom: solid 2px #D2D2D2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 820px;
+}
+.news-left li{
+  box-sizing: border-box;
+  padding: 0 2px;
+  position: relative;
+  top: 8px;
+  width: 25%;
+}
+.news-left li:nth-of-type(even){
+  display: none;
+}
+.news-left li:nth-of-type(1){
+  padding-left: 0px;
+}
+.news-left li:nth-of-type(2){
+  padding-left: 0px;
+}
+.news-left li:last-of-type{
+  padding-right: 0px;
+}
+.news-left li a{
+  display: inline-block;
+}
+.border{
+  border: solid 1px #D2D2D2;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.border-two{
+  background-color:red;
+  display: none;
+  height: 460px;
+}
+.border-three{
+  background-color:green;
+  display: none;
+  height: 460px;
+}
+.border-four{
+  background-color:blue;
+  display: none;
+  height: 460px;
+}
+.release{
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 50%;
+}
+.release h1,.notice h1{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  width: 200px;
+}
+.release a,.notice a{
+  border: solid 2px #D2D2D2;
+  border-radius: 30px;
+  color:#003FA7;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+}
+.release a:hover,.notice a:hover{
+  text-decoration: underline;
+}
+.top-btn{
+  float: right;
+  padding: 12px 15px;
+  position: relative;
+  top:-10px;
+}
+.top-btn i{
+  color:#CC0000;
+  padding-right: 10px;
+}
+.article{
+  border-bottom: dotted 1px #D2D2D2;
+  min-height: 84px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.article:last-of-type{
+  border-bottom: none;
+}
+.article h2{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.article span{
+  color:#4c7f29;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  padding-left: 15px;
+}
+.article a{
+  border: none;
+  color:#003FA7;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.article i{
+  color: #CC0000;
+  padding-right: 5px;
+}
+.notice{
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  width: 50%;
+}
+.news-right{
+  margin-left: 30px;
+  width: 350px;
+}
+.sns{
+  background-color: #1DA1F2;
+  height: 330px;
+  margin-top: 50px;
+  width: 100%;
+}
+.stock{
+  background-color: white;
+  border: solid 1px #D2D2D2;
+  margin-top: 22px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.stock:hover{
+  opacity: 0.7;
+}
+.stock:hover > .stock h2{
+  text-decoration: underline;
+}
+.img-wrap{
+  display: block;
+  height: 90px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 280px;
+}
+.stock img{
+  display: block;
+  width: 280px;
+}
+.stock h1,.stock h2{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.stock h1{
+  background-color: #CC0000;
+  color:white;
+  padding:  8px 5px 8px;
+  text-align: center;
+  width: 70px;
+}
+.stock h2{
+  color:#3C6CBC;
+  margin-bottom: 20px;
+}
+.stock h2 i{
+  color:#cc0000;
+  padding-left: 50px;
+}
+.emergency{
+  background-color: #F8E0EC;
+  border-top: solid 1px #D2D2D2;
+  border-bottom: solid 1px #D2D2D2;
+  color:#003FA7;
+  padding: 17px 0;
+}
+.emergency a{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding-left: 30px;
+}
+.emergency a:hover{
+  text-decoration: underline;
+}
+.emergency a::after{
+  background-image: url('https://www.japanpost.jp/images/ico_window_blue.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  left: 10px;
+  width: 15px;
+}
+.emergency i{
+  color:#CC0000;
+  padding-right: 15px;
+}
+.news-left-pc{
+  display: block;
+}
+.news-left-sm{
+  display: none;
+}
+/*----------------------------------------------------*/
+@media(max-width:768px){
+  .news{
+    margin-top: 0;
+    padding-bottom: 43px;
+    width: 100%;
+  }
+  .news-container{
+    padding-top: 35px;
+    width: 100%;
+  }
+  .news-container h1{
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 15px;
+    width: 100%;
+  }
+  .border{
+    flex-wrap: wrap;
+  }
+  .article{
+    border-top: dotted 1px #D2D2D2;
+    border-bottom: none;
+    min-height: 57px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .article:last-of-type{
+    border-bottom: solid 1px #D2D2D2;
+  }
+  .news-left ul{
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+  .news-left-sm{
+    display: block;
+  }
+  .news-left-pc{
+    display: none;
+  }
+  .news-left{
+    margin-top: 13px;
+  }
+  .news-left li{
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    top:0px;
+    text-align: center;
+    width: 24.5%;
+  }
+  .news-left li:nth-child(1){
+    border: solid 1px #E3E3E3;
+  }
+  .news-left li:nth-child(2){
+    border: solid 1px #E3E3E3;
+  }
+  .news-left li a{
+    padding-top: 10px;
+    padding-bottom: 3px;
+  }
+  .news-left li a img{
+    width: 75%;
+  }
+  .small-img{
+    width: 65%!important;
+  }
+  .news-left ul li:nth-of-type(1){
+    background-color: white;
+    position: relative;
+    top:5px;
+  }
+  .news-left ul li:nth-of-type(2){
+    background-color: white;
+    padding: 5px 0;
+  }
+  .news-left ul li:nth-of-type(3){
+    background-color: #cc0000;
+    position: relative;
+    top:5px;
+  }
+  .news-left ul li:nth-of-type(4){
+    background-color: #cc0000;
+    padding: 5px 0;
+  }
+  .news-left ul li:nth-of-type(5){
+    background-color: #049A04;
+    position: relative;
+    top:5px;
+  }
+  .news-left ul li:nth-of-type(6){
+    background-color: #049A04;
+    padding: 5px 0;
+  }
+  .news-left ul li:nth-of-type(7){
+    background-color: #000099;
+    position: relative;
+    top:5px;
+  }
+  .news-left ul li:nth-of-type(8){
+    background-color: #000099;
+    padding: 5px 0;
+  }
+  .release{
+    padding: 15px 0 0;
+    width: 100%;
+  }
+  .notice{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .release h1,.notice h1{
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: auto;
+  }
+  .release a,.notice a{
+    border: solid 2px #D2D2D2;
+    border-radius: 30px;
+    line-height: 16px;
+  }
+  .top-btn{
+    float: right;
+    padding: 5px 15px;
+    position: relative;
+    top:0px;
+  }
+  .article a{
+    border: none;
+    color:#003FA7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .article h2{
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+  .news-right{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .sns{
+    background-color: #1DA1F2;
+    height: 275px;
+    margin: 20px 20px 0;
+    width:auto;
+  }
+  .stock{
+    background-color: white;
+    border: solid 1px #D2D2D2;
+    margin: 30px 20px 0;
+    padding-bottom: 20px;
+    width: auto;
+  }
+  .stock:hover{
+    border: solid 1px #cc0000;
+    opacity: 0.7;
+  }
+  .stock h1,.stock h2{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .stock h1{
+    background-color: #CC0000;
+    color:white;
+    padding:  8px 5px 8px;
+    text-align: center;
+    width: 70px;
+  }
+  .stock h2{
+    width: 70%;
+  }
+  .stock h2 i{
+    color:#cc0000;
+    float: right;
+    padding-left: 0px;
+    position: relative;
+    top:65px;
+  }
+
+}
+/*----------------------------------------------------*/
+.main{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  width: 1200px;
+}
+.three-info{
+  height: 463px;
+  overflow: hidden;
+  position: relative;
+  width: 380px;
+}
+.first .three-info-contaier{
+  background-image: url("https://www.japanpost.jp/images/menu_corp.png");
+  background-size: cover;
+  height: 463px;
+  transition-duration: 0.5s;
+  width: 380px;
+}
+.three-info:hover > a > .three-info-contaier{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}
+.two-info:hover > .two-info-contaier{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}
+.cover{
+  height: 100%;
+  transition: all 0.5s;
+  width: 100%;
+}
+.three-info:hover > a > .three-info-contaier > .cover{
+  background-color: rgba(0,0,0,0.4);
+}
+.two-info:hover > .two-info-contaier > .cover{
+  background-color: rgba(0,0,0,0.4);
+}
+.info-text-p p:hover{
+  color:#CC0000;
+  text-decoration: underline;
+}
+.info-text{
+  border-left: solid 2px #cc0000;
+  color:white;
+  position: absolute;
+  top:30px;
+  left: 30px;
+}
+.info-text h1{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-bottom: 10px;
+  padding-left: 27px;
+  transition: all 0.5s;
+}
+.info-text h2{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-left: 27px;
+  transition: all 0.5s;
+}
+.info-text-p{
+  background-color: rgba(255,255,255,0.7);
+  font-size: 16px;
+  font-weight: 700;
+  height: 78px;
+  line-height: 19px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.info-text-p p{
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 27px;
+}
+.info-text-p p i{
+  color:#cc0000;
+  padding-right: 10px;
+}
+
+.second .three-info-contaier{
+  background-image: url("https://www.japanpost.jp/images/menu_topmessage.png");
+  background-size: cover;
+  height: 463px;
+  transition-duration: 0.5s;
+  width: 380px;
+}
+.second .info-text h1{
+  color:black;
+  font-size: 28px;
+  line-height: 28px;
+  margin: 10px 0;
+  padding-left: 20px;
+  transition: all 0.5s;
+}
+.three-info:hover > a > .info-text h1{
+  color:white;
+}
+.two-info:hover > .info-text h1{
+  color:white;
+}
+.two-info:hover > .info-text h2{
+  color:white;
+}
+.third .three-info-contaier{
+  background-image: url("https://www.japanpost.jp/images/menu_ir.png");
+  background-size: cover;
+  height: 463px;
+  transition-duration: 0.5s;
+  width: 380px;
+}
+.third .info-text-p{
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  height: auto;
+  line-height: 19px;
+  position: absolute;
+  top:200px;
+  width: 100%;
+}
+.third .info-text h1{
+  font-size: 28px;
+  line-height: 28px;
+  margin:0;
+}
+.third .info-text-p p{
+  background-color: white;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto 10px;
+  padding: 13px 0;
+  text-align: center;
+  transition: all 0.5s;
+  position: relative;
+  top:0;
+  max-width: 300px;
+}
+.third .info-text-p p:hover{
+  color:#CC0000;
+  top:-3px;
+}
+.third .info-text-p p i{
+  color:#cc0000;
+  float:right;
+  padding-right: 20px;
+}
+.i-three{
+  position: relative;
+  top:-8px;
+}
+.margin{
+  height: 30px;
+  width: 100%;
+}
+.two-info{
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  width: 585px;
+}
+.forth .two-info-contaier{
+  background-image: url("https://www.japanpost.jp/images/menu_group.png");
+  background-size: cover;
+  height: 320px;
+  transition-duration: 0.5s;
+  width: 585px;
+}
+.forth .info-text-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forth .info-text-p a{
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 10px 25px 6px 20px;
+  position: relative;
+  top:0;
+  transition: all 0.5s;
+}
+.forth .info-text-p a:hover{
+  box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+  top:-3px;
+}
+.forth .info-text-p a::after{
+  background-image: url('https://www.japanpost.jp/images/ico_window_blue.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  height: 13px;
+  position: relative;
+  top:-3px;
+  left: 12px;
+  width: 13px;
+}
+.forth .info-text-p a:not(:last-child){
+  margin-right: 15px;
+}
+.forth h1,.forth h2{
+  color:black;
+}
+.fifth .two-info-contaier{
+  background-image: url("https://www.japanpost.jp/images/menu_csr.png");
+  background-size: cover;
+  height: 320px;
+  transition-duration: 0.5s;
+  width: 585px;
+}
+.info-text-p-two{
+  font-size: 16px;
+  font-weight: 700;
+  height: auto;
+  line-height: 19px;
+  position: absolute;
+  top:27px;
+  right: -100px;
+  width: 100%;
+}
+.info-text-p-two p{
+  background-color: white;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto 10px;
+  padding: 13px 0;
+  position: relative;
+  top:0;
+  text-align: center;
+  transition: all 0.5s;
+  max-width: 300px;
+}
+.info-text-p-two p:hover{
+  color:#CC0000;
+  top:-3px;
+}
+.info-text-p-two p i{
+  color:#cc0000;
+  float:right;
+  padding-right: 20px;
+}
+.main-sm{
+  display: none;
+}
+/*--------------------------------------------------------------*/
+@media(max-width:768px){
+  .main{
+    display: none;
+  }
+  .main-sm{
+    display: block;
+    margin-top: 40px;
+  }
+  .main-container-sm{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .five-info-sm{
+    position: relative;
+    width: 100%;
+  }
+  .five-info-contaier-sm{
+    height: auto;
+    width: 100%;
+  }
+  .five-info-contaier-sm img{
+    width: 100%;
+  }
+  .info-text-sm{
+    border-left: solid 2px #cc0000;
+    color:white;
+    position: absolute;
+    top:15px;
+    left: 15px;
+  }
+  .info-text-sm h1{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 10px;
+    transition: all 0.5s;
+  }
+  .info-text-sm h2{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    transition: all 0.5s;
+  }
+  .info-text-p-sm{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    padding: 5px 0 27px 5px;
+  }
+  .info-text-p-sm p{
+    display: inline-block;
+    padding-left: 5px;
+  }
+  .info-text-p-sm p:nth-child(3),.info-text-p-sm p:nth-child(4){
+    padding-top: 10px;
+  }
+  .info-text-p-sm i{
+    color:#cc0000;
+    padding-right: 5px;
+  }
+  .info-text-p-two-sm{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+  .info-text-p-two-sm p{
+    display: inline-block;
+  }
+  .info-text-p-two-sm i{
+    color:#cc0000;
+    padding-right: 5px;
+  }
+  .second-sm h1{
+    color:black;
+    padding: 10px 0 10px 10px;
+    transition: all 0.5s;
+  }
+  .forth-sm h1,.forth-sm h2{
+    color:black;
+    transition: all 0.5s;
+  }
+  .five-info-sm:hover > .info-text-sm h1{
+    color:white;
+  }
+  .five-info-sm:hover > a > .info-text-sm h1{
+    color:white;
+  }
+  .five-info-sm:hover > .info-text-sm h2{
+    color:white;
+  }
+  .info-text-a-sm{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    padding:0 0 10px;
+    width: 90%;
+  }
+  .info-text-a-sm a{
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    top:0;
+    transition: all 0.3s;
+    width: 33%;
+  }
+  .info-text-a-sm a img{
+    width: 80%;
+  }
+  .info-text-a-sm a::after{
+    background-image: url('https://www.japanpost.jp/images/ico_window_blue.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 10px;
+    position: relative;
+    top:-5px;
+    left: 15px;
+    width: 10px;
+  }
+  .info-text-a-sm a:not(:first-child)::after{
+    top: -3px;
+  }
+  .info-text-a-sm a:hover{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    top:-5px;
+  }
+
+}
+/*--------------------------------------------------------------*/
+.contents{
+  background-color: #f7f7f7;
+  padding-top: 30px;
+  padding-bottom: 42px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.contents a{
+  transition: all 0.3s;
+}
+.contents a:hover{
+  opacity: 0.5;
+}
+.contents h1{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+.contents ul{
+  display: flex;
+  margin: 0 auto;
+}
+.contents-top{
+  width: 1100px;
+}
+.contents-top li{
+  padding: 10px;
+}
+.contents-top li img{
+  box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+}
+.contents-center{
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 55px;
+  width:690px;
+}
+.contents-center li{
+  padding: 7px;
+}
+.contents-bottom img{
+  width: 325px;
+}
+.contents ul:nth-of-type(3){
+  display: none;
+}
+/*-------------------------------------------------*/
+@media(max-width:768px){
+  .contents{
+    padding-top: 10px;
+    padding-bottom: 45px;
+    }
+    .contents-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  .contents h1{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+  .contents-top{
+    width: 100%;
+  }
+  .contents ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contents ul:nth-of-type(2){
+    display: none;
+  }
+  .contents ul:nth-of-type(3){
+    display: flex;
+  }
+  .contents-top li{
+    padding:0 5px 5px;
+    width: 28%;
+  }
+  .contents-top li img{
+    width: 100%;
+  }
+  .contents-center{
+    padding-top: 0px;
+    padding-bottom: 35px;
+  }
+  .slick3{
+    overflow: hidden;
+    min-width: 730px;
+  }
+  .slick3 li{
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .slick3 li img{
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+  }
+  .slick3 .slick-slide{
+    background-color: #f7f7f7;
+    outline: none!important;
+  }
+  .slick3 .slick-slide img{
+    opacity: 1;
+  }
+}
+/*---------------------------------------------------------------*/
+.attention{
+  overflow: hidden;
+  width: 100%;
+}
+.attention-container h1{
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin:  60px  auto 0;
+  padding: 20px 0;
+  text-align: center;
+  width: 1200px;
+}
+.attention-text{
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  width: 1160px;
+}
+.attention-container p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  padding-top: 25px;
+}
+.attention-container p:last-child{
+  padding-top: 10px;
+  padding-left:15px;
+}
+.attention-container p a{
+  color:#003FA7;
+}
+.attention-container p a:hover{
+  text-decoration: underline;
+}
+.attention-container p i{
+  color:#cc0000;
+  padding-right: 10px;
+}
+.after::after{
+  background-image: url('https://www.japanpost.jp/images/ico_window_blue.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  height: 13px;
+  padding-right: 10px;
+  position: relative;
+  left: 10px;
+  width: 13px;
+}
+/*-------------------------------------------------*/
+@media(max-width:768px){
+  .attention-container h1{
+    font-size: 16px;
+    line-height: 19px;
+    margin:  20px  auto 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .attention-text{
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 48px;
+    width: 100%;
+  }
+  .attention-container p{
+    padding-top: 12px;
+    padding-right: 40px;
+  }
+  .attention-container p:last-child{
+    padding-top: 10px;
+    padding-left:10px;
+  }
+}
+/*---------------------------------------------------------------*/
+.group{
+  background-color: #fcfcfc;
+  border-top: solid 1px #eeeeee;
+  margin-top: 75px;
+  border-bottom: solid 1px #eeeeee;
+  overflow: hidden;
+  width: 100%;
+}
+.group ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left:-20px;
+}
+.group li{
+  border:  solid 1px #EEEEEE;
+  padding: 10px 15px 8px 25px;
+  margin: 2px;
+}
+.group ul li:first-child{
+  border: none;
+}
+.group a{
+  display: inline-block;
+  height: 100%;
+  transition: all 0.3s;
+  width: 100%;
+}
+.group a:hover{
+  opacity: 0.5;
+}
+.group ul li a::after{
+  background-image: url('https://www.japanpost.jp/images/ico_window_blue.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  height: 13px;
+  padding-right: 10px;
+  position: relative;
+  top:-8px;
+  left: 5px;
+  width: 13px;
+}
+.fixed{
+  position: absolute;
+}
+
+/*-------------------------------------------------*/
+@media(max-width:768px){
+  .group{
+    margin-bottom: 75px;
+  }
+  .group ul{
+    flex-wrap: wrap;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: static;
+  }
+  .group li{
+    margin: 0 0 13px;
+    width: 100%;
+  }
+  .group li:first-child{
+    margin-bottom: 1px;
+  }
+  .group ul li a::after{
+    float: right;
+    padding-right: 0px;
+    position: relative;
+    top: 10px;
+    height: 16px;
+    width: 16px;
+  }
+  .top{
+    display: none!important;
+  }
+  .top-sm{
+    background-color: rgba(255,0,0,0.8);
+    color:white;
+    display: block;
+    font-size: 30px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    z-index: 100;
+  }
+  .top-sm i{
+    padding-left: 15px;
+  }
+  .relative{
+    float: right;
+    position: relative;
+  }
+}
+/*---------------------------------------------------------------*/
+.summary{
+  background-color: #EEEEEE;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.summary-container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.summary-left{
+  margin: 0 20px;
+}
+.summary-center{
+  margin: 0 20px;
+}
+.summary-right{
+  margin: 0 20px;
+}
+.summary h1{
+  border-top: solid 1px black;
+  border-bottom: dotted 1px black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-top: 55px;
+  padding: 20px;
+}
+.summary h1:hover, .summary a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.summary ul{
+  list-style-type: none;
+  margin-top: 8px;
+  padding: 0 10px 0 5px;
+  width: 230px;
+}
+.summary li{
+  padding: 9px 10px 0 10px;
+}
+.summary li a{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+}
+.summary li a i{
+  color:#cc0000;
+  padding-right: 5px;
+}
+.social-media{
+  background-color: white;
+  height: 470px;
+  margin-left: 20px;
+  position: relative;
+  top:55px;
+  text-align: center;
+  width: 240px;
+}
+.social-top{
+  border-bottom: dotted 1px #AAAAAA;
+  padding-bottom: 10px;
+}
+.social-media h1{
+  background-color: #cc0000;
+  border: none;
+  color:white;
+  margin: 0;
+  padding: 17px;
+  text-align: center;
+}
+.social-media h2{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.social-media a{
+  display: inline-block;
+  margin: 2px 0;
+}
+.social-media a img{
+  width: 220px;
+}
+.social-top-img{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 130px;
+}
+.social-bottom-img{
+  padding-top: 22px;
+  width: 70px;
+}
+.summary-bottom{
+  margin-top: 70px;
+  padding-bottom: 18px;
+  text-align: center;
+  width: 100%;
+}
+.right-img{
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top:-1px;
+}
+.left-list{
+  display: inline-block;
+}
+.left-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.left-list ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left-list ul li {
+  float: left;
+  border-left: 1px solid rgba(0,0,0,1);
+  padding: 0 18px;
+}
+.left-list ul li:first-child {
+  border-left: none;
+}
+.left-list ul li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: #003FA7;
+  text-align: center;
+}
+.left-list ul li a:hover {
+  background: #eee;
+}
+.list{
+  display: none;
+}
+footer{
+  background-color: #CB0002;
+  overflow: hidden;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1200px;
+}
+footer img:first-child{
+  display: block;
+}
+footer img:nth-child(2){
+  display: none;
+}
+footer p{
+  color:white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 28px;
+}
+/*---------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+@media(max-width:768px){
+  .summary{
+    display: none;
+  }
+  .list{
+    background-color: #EEEEEE;
+    border-top: solid 2px #cc0000;
+    display: block;
+  }
+  .list-contaier{
+
+  }
+  .list ul li{
+    border-bottom: solid 1px #D9D9D9;
+  }
+  .list ul li a{
+    color:black;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding: 10px 0 10px 15px;
+    text-decoration: none;
+  }
+  .list ul li a i{
+    color:#cc0000;
+    padding-right: 10px;
+  }
+  .list-bottom{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    width: 100%;
+  }
+  .list-left{
+    background-color: white;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 7.5px;
+    padding-top: 49px;
+    text-align: center;
+    width: 50%;
+  }
+  .list-left .center{
+    padding-bottom: 27px;
+  }
+  .list-left img{
+    width: 100px;
+  }
+  .list-left a img{
+    border-radius: 3px;
+    width: 30px;
+  }
+  .list-right{
+    background-color: white;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 22px;
+    text-align: center;
+    width: 50%;
+  }
+  .list-right .center{
+    padding-bottom: 8px;
+  }
+  .list-right p{
+    padding-top: 8px;
+  }
+  .list-right img{
+    width: 55px;
+  }
+  .list-right a img{
+    border-radius: 3px;
+    width: 30px;
+  }
+  .p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  footer{
+
+  }
+  .footer-container{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  footer img:first-child{
+    display: none;
+  }
+  footer img:nth-child(2){
+    display: block;
+    padding: 15px 0;
+    width: 45%;
+  }
+  footer p{
+    display: none;
+  }
+}
