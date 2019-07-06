@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模写コーディング8</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </head>
+  <body>
+    <div class="black"></div>
+    <div class="top"><p><i class="fas fa-caret-up"></i>このページの先頭へ戻る</p></div>
+    <div class="six-topics-two">
+      <div class="two-containter">
+        <div class="logo"><a></a></div>
+        <ul>
+          <li class="info"><a>企業情報<i class="fas fa-caret-down"></i></a></li>
+          <li><a>グループ会社情報<i class="fas fa-caret-down"></i></a></li>
+          <li><a>株主・投資家のみなさまへ<i class="fas fa-caret-down"></i></a></li>
+          <li><a>ニュースリリース<i class="fas fa-caret-down"></i></a></li>
+          <li><a>CRS<i class="fas fa-caret-down"></i></a></li>
+          <li><a>採用情報<i class="fas fa-caret-down"></i></a></li>
+        </ul>
+        <input placeholder="サイト内検索"></input>
+      </div>
+    </div>
+    <header>
+      <div class="header-container">
+        <div class="red-border"><a><img src="https://www.japanpost.jp/images/logo.gif"></a><i class="fas fa-bars bar"></i></div>
+        <div class="header-left">
+          <a href="#"><img src="https://www.japanpost.jp/images/logo.gif"></a>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li><a>よくあるご質問・お問い合わせ</a></li>
+            <li><a>サイトマップ</a></li>
+            <li><a>English</a></li>
+          </ul>
+          <a class="header-a">調達情報</a>
+          <div class="clear"></div>
+          <input placeholder="サイト内検索"></input>
+        </div>
+      </div>
+    </header>
+    <div class="modal-sm">
+      <div class="shadow">
+        <div class="modal-sm-con">
+          <div class="modal-sm-input">
+            <input placeholder="キーワードを入力">
+          </div>
+          <div class="modal-sm-six">
+            <ul class="ab">
+              <li>企業情報<i class="fas fa-plus-circle"></i></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+            </ul>
+            <ul class="cd">
+              <li>グループ各社情報<i class="fas fa-plus-circle"></i></li>
+              <li><a>グループ各社情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>グループ各社情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>グループ各社情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>グループ各社情報トップ<i class="fas fa-caret-right"></i></a></li>
+            </ul>
+            <ul class="ef">
+              <li>株式・投資家のみなさまへ<i class="fas fa-plus-circle"></i></li>
+              <li><a>株式・投資家のみなさまへトップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>株式・投資家のみなさまへトップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>株式・投資家のみなさまへトップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>株式・投資家のみなさまへトップ<i class="fas fa-caret-right"></i></a></li>
+            </ul>
+            <ul class="gh">
+              <li>ニュースリリース<i class="fas fa-plus-circle"></i></li>
+              <li><a>ニュースリリーストップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>ニュースリリーストップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>ニュースリリーストップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>ニュースリリーストップ<i class="fas fa-caret-right"></i></a></li>
+            </ul>
+            <ul  class="ij">
+              <li>採用情報<i class="fas fa-plus-circle"></i></li>
+              <li><a>採用情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>採用情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>採用情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>採用情報トップ<i class="fas fa-caret-right"></i></a></li>
+            </ul>
+            <ul class="kl">
+              <li>企業情報<i class="fas fa-plus-circle"></i></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+              <li><a>企業情報トップ<i class="fas fa-caret-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="modal-sm-four">
+            <a>よくあるご質問</a>
+            <a>サイトマップ</a>
+            <a>English</a>
+            <a>調達情報</a>
+          </div>
+          <div class="list-bottom">
+            <div class="list-left">
+              <div class="center"><img src="https://www.japanpost.jp/images/logo_social_jp.png"></div>
+              <a><img src="https://www.japanpost.jp/images/btn_social_youtube_sp.png"></a>
+              <a><img src="https://www.japanpost.jp/images/btn_social_twitter_sp.png"></a>
+            </div>
+            <div class="list-right">
+              <div class="center">
+                <img src="https://www.japanpost.jp/images/logo_social_athlete.png">
+                <p>日本郵政グループ<br>女子陸上部</p>
+              </div>
+              <a><img src="https://www.japanpost.jp/images/btn_social_youtube_sp.png"></a>
+              <a><img src="https://www.japanpost.jp/images/btn_social_fb_sp.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="six-topics">
+      <div class="six-container">
+        <ul>
+          <li class="info"><a href="#">企業情報<i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">グループ会社情報<i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">株主・投資家のみなさまへ<i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">ニュースリリース<i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">CRS<i class="fas fa-caret-down"></i></a></li>
+          <li><a href="#">採用情報<i class="fas fa-caret-down"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal modal-one">
+      <div class="modal-wrap one">
+        <div class="modal-wrap-left"><a><p><i class="fas fa-building"></i>企業情報</p></a></div>
+        <div class="modal-wrap-center">
+          <ul>
+            <li class="modal-one"><a><i class="fas fa-caret-right"></i><p>会社概要</p></a></li>
+            <li class="modal-two"><a><i class="fas fa-caret-right"></i><p>経営理念、ガバナンス等</p></a></li>
+            <li class="modal-three"><a><i class="fas fa-caret-right right-three"></i><p>お客さま本位の<br>業務運営に関する基本方針</p></a></li>
+            <li class="modal-four"><a><i class="fas fa-caret-right"></i><p>グループアイデンティティ等</p></a></li>
+          </ul>
+        </div>
+        <div class="modal-wrap-right">
+          <ul>
+            <li><a><i class="fas fa-caret-right"></i><p>トップメッセージ</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>グループ・コンプライアンス等</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>沿革</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>調達情報</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>主な事業・関連施設</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>日本郵政株式会社の広告</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>日本郵政グループ女子陸上部</p></a></li>
+            <li><a><i class="fas fa-caret-right"></i><p>東京2020への取組</p></a></li>
+          </ul>
+        </div>
+        <div class="cross">
+          <img src="https://www.japanpost.jp/images/megadrop_close.png">
+          <p>閉じる</p>
+        </div>
+      </div>
+      <div class="modal-wrap two"></div>
+      <div class="modal-wrap three"></div>
+      <div class="modal-wrap four"></div>
+      <div class="modal-wrap five"></div>
+      <div class="modal-wrap six"></div>
+    </div>
+    <div class="slick-wrap">
+      <ul class="slick">
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_message201810_r.jpg" alt="image01"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_sdgs_r_2.jpg" alt="image02"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_kids_r.jpg" alt="image03"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_15_r.jpg" alt="image04"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_12_r.jpg" alt="image05"></a></li>
+      </ul>
+      <ul class="slick2">
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_message201810_r.jpg" alt="image01"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_sdgs_r_2.jpg" alt="image02"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_kids_r.jpg" alt="image03"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_15_r.jpg" alt="image04"></a></li>
+        <li><a href="#"><img src="https://www.japanpost.jp/images/index_visual_12_r.jpg" alt="image05"></a></li>
+      </ul>
+    </div>
+    <div class="news">
+      <div class="news-container">
+        <h1>ニュースリリース</h1>
+        <div class="news-left news-left-pc">
+          <ul>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_jp_off.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_jp_on.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_yuubin_off.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_yuubin_on.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_yuucho_off.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_yuucho_on.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_kanpo_off.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/tab_news_kanpo_on.png"></a></li>
+          </ul>
+          <div class="border">
+            <div class="release">
+              <h1>プレスリリース</h1>
+              <a class="top-btn"><i class="fas fa-caret-right"></i>一覧を見る</a>
+              <div class="article">
+                <h2>2019年6月19日<span>経済・財務など</span></h2>
+                <a><i class="fas fa-caret-right"></i>役員異動のお知らせ</a>
+              </div>
+              <div class="article">
+                <h2>2019年6月19日<span>経済・財務など</span></h2>
+                <a><i class="fas fa-caret-right"></i>日本郵政株式会社本社におけるLEED-CI(2009年版）ゴールド認証の取得について</a>
+              </div>
+              <div class="article">
+                <h2>2019年6月19日<span>経済・財務など</span></h2>
+                <a><i class="fas fa-caret-right"></i>連結子会社株式の売却株式総数の確定に関するお知らせ</a>
+              </div>
+            </div>
+            <div class="notice">
+              <h1>お知らせ</h1>
+              <a class="top-btn"><i class="fas fa-caret-right"></i>一覧を見る</a>
+              <div class="article">
+                <h2>2019年7月 2日</h2>
+                <a><i class="fas fa-caret-right"></i>日本郵政グループ女子陸上部の「大会結果」を更新しました（第103回 日本陸上競技選手権大会)</a>
+              </div>
+              <div class="article">
+                <h2>2019年7月 2日</h2>
+                <a><i class="fas fa-caret-right"></i>ESGデータ集「雇用に関するデータ」を更新しました</a>
+              </div>
+              <div class="article">
+                <h2>2019年7月 2日</h2>
+                <a><i class="fas fa-caret-right"></i>「エンプロイヤーブランド・リサーチ 2019 ランスタッドアワード」の 金融/保険部門で2年連続で第1位に選ばれました</a>
+              </div>
+            </div>
+          </div>
+          <div class="border border-two"></div>
+          <div class="border border-three"></div>
+          <div class="border border-four"></div>
+        </div>
+        <div class="news-left news-left-sm">
+          <ul>
+            <li><a><img src="https://www.japanpost.jp/images/logo_fixed.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/logo_fixed.png"></a></li>
+            <li><a><img class="small-img" src="https://www.japanpost.jp/images/logo_yuubin.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/logo_yuubin.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/logo_yuucho.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/logo_yuucho.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/logo_kanpo.png"></a></li>
+            <li><a><img src="https://www.japanpost.jp/images/logo_kanpo.png"></a></li>
+          </ul>
+          <div class="border">
+            <div class="release">
+              <h1>プレスリリース</h1>
+              <a class="top-btn"><i class="fas fa-caret-right"></i>一覧を見る</a>
+              <div class="article">
+                <h2>2019年6月19日<span>経済・財務など</span></h2>
+                <a><i class="fas fa-caret-right"></i>役員異動のお知らせ</a>
+              </div>
+              <div class="article">
+                <h2>2019年6月19日<span>経済・財務など</span></h2>
+                <a><i class="fas fa-caret-right"></i>日本郵政株式会社本社におけるLEED-CI(2009年版）ゴールド認証の取得について</a>
+              </div>
+              <div class="article">
+                <h2>2019年6月19日<span>経済・財務など</span></h2>
+                <a><i class="fas fa-caret-right"></i>連結子会社株式の売却株式総数の確定に関するお知らせ</a>
+              </div>
+            </div>
+            <div class="notice">
+              <h1>お知らせ</h1>
+              <a class="top-btn"><i class="fas fa-caret-right"></i>一覧を見る</a>
+              <div class="article">
+                <h2>2019年7月 2日</h2>
+                <a><i class="fas fa-caret-right"></i>日本郵政グループ女子陸上部の「大会結果」を更新しました（第103回 日本陸上競技選手権大会)</a>
+              </div>
+              <div class="article">
+                <h2>2019年7月 2日</h2>
+                <a><i class="fas fa-caret-right"></i>ESGデータ集「雇用に関するデータ」を更新しました</a>
+              </div>
+              <div class="article">
+                <h2>2019年7月 2日</h2>
+                <a><i class="fas fa-caret-right"></i>「エンプロイヤーブランド・リサーチ 2019 ランスタッドアワード」の 金融/保険部門で2年連続で第1位に選ばれました</a>
+              </div>
+            </div>
+          </div>
+          <div class="border border-two"></div>
+          <div class="border border-three"></div>
+          <div class="border border-four"></div>
+        </div>
+        <div class="news-right">
+          <div class="sns"></div>
+          <div class="stock">
+            <a>
+              <h1>株価情報</h1>
+              <h2>日本郵政（6178）東証一部<i class="fas fa-caret-right"></i></h2>
+              <div class="img-wrap"><img src="https://dimg.stockweather.co.jp/sw_dimg/JapanPostHD2_real.ashx"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="emergency">
+      <a><i class="fas fa-caret-right"></i>自然災害により被害を受けられた地域のみなさまへの非常取扱いについて(2018年9月6日更新)</a>
+    </div>
+    <div class="main">
+      <div class="main-container">
+        <div class="three-info first">
+          <a href="#">
+            <div class="three-info-contaier">
+              <div class="cover"></div>
+            </div>
+            <div class="info-text">
+              <h1>日本郵政株式会社</h1>
+              <h2>企業情報</h2>
+            </div>
+          </a>
+          <div class="info-text-p">
+            <p><i class="fas fa-caret-right"></i>会社概要</p>
+            <p><i class="fas fa-caret-right"></i>経営理念、ガバナンス等</p>
+          </div>
+        </div>
+        <div class="three-info second">
+          <a href="#">
+            <div class="three-info-contaier">
+              <div class="cover"></div>
+            </div>
+            <div class="info-text">
+              <h1>トップメッセージ</h1>
+            </div>
+          </a>
+          <div class="info-text-p">
+            <p><i class="fas fa-caret-right"></i>社長会見はこちら</p>
+          </div>
+        </div>
+        <div class="three-info third">
+          <a href="#">
+            <div class="three-info-contaier">
+              <div class="cover"></div>
+            </div>
+            <div class="info-text">
+              <h1>株主・投資家の<br>みなさまへ</h1>
+            </div>
+          </a>
+          <div class="info-text-p">
+            <p>グループ中期経営計画<i class="fas fa-caret-right"></i></p>
+            <p>決算発表資料<i class="fas fa-caret-right"></i></p>
+            <p>統合報告書・<br>ディスクロージャー誌<i class="fas fa-caret-right i-three"></i></p>
+            <p>個人投資家のみなさまへ<i class="fas fa-caret-right"></i></p>
+          </div>
+        </div>
+        <div class="margin"></div>
+        <div class="two-info forth">
+          <div class="two-info-contaier">
+            <div class="cover"></div>
+          </div>
+          <div class="info-text">
+            <h1>日本郵政グループ</h1>
+            <h2>各社情報</h2>
+          </div>
+          <div class="info-text-p">
+            <a><img src="https://www.japanpost.jp/images/logo_group_yuubin.png"></a>
+            <a><img src="https://www.japanpost.jp/images/logo_group_yuucho.png"></a>
+            <a><img src="https://www.japanpost.jp/images/logo_group_kanpo.png"></a>
+          </div>
+        </div>
+        <div class="two-info fifth">
+          <div class="two-info-contaier">
+            <div class="cover"></div>
+          </div>
+          <div class="info-text">
+            <h1>日本郵政グループ</h1>
+            <h2>CRS情報</h2>
+          </div>
+          <div class="info-text-p">
+            <p><i class="fas fa-caret-right"></i>地域社会と共に</p>
+            <p><i class="fas fa-caret-right"></i>地球と共に</p>
+            <p><i class="fas fa-caret-right"></i>人と共に</p>
+          </div>
+          <div class="info-text-p-two">
+            <p>グループCSRのトピックス<i class="fas fa-caret-right"></i></p>
+            <p>ステークホルダー<br>エンゲージメント<i class="fas fa-caret-right i-three"></i></p>
+            <p>GRIスタンダード対照表<i class="fas fa-caret-right"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-sm">
+      <div class="main-container-sm">
+        <div class="five-info-sm first-sm">
+          <a href="#">
+            <div class="five-info-contaier-sm">
+              <img src="https://www.japanpost.jp/images/menu_corp_sp.png">
+            </div>
+            <div class="info-text-sm">
+              <h2>日本郵政株式会社</h2>
+              <h1>企業情報</h1>
+            </div>
+          </a>
+          <div class="info-text-p-sm">
+            <p><i class="fas fa-caret-right"></i>会社概要</p>
+            <p><i class="fas fa-caret-right"></i>経営理念、ガバナンス等</p>
+          </div>
+        </div>
+        <div class="five-info-sm second-sm">
+          <a href="#">
+            <div class="five-info-contaier-sm">
+              <img src="https://www.japanpost.jp/images/menu_topmessage_sp.png">
+            </div>
+            <div class="info-text-sm">
+              <h1>トップメッセージ</h1>
+            </div>
+          </a>
+          <div class="info-text-p-sm">
+            <p><i class="fas fa-caret-right"></i>社長会見はこちら</p>
+          </div>
+        </div>
+        <div class="five-info-sm third-sm">
+          <a href="#">
+            <div class="five-info-contaier-sm">
+              <img src="https://www.japanpost.jp/images/menu_ir_sp.png">
+            </div>
+            <div class="info-text-sm">
+              <h1>株主・投資家の<br>みなさまへ</h1>
+            </div>
+          </a>
+          <div class="info-text-p-sm">
+            <p><i class="fas fa-caret-right"></i>グループ中期経営計画</p>
+            <p><i class="fas fa-caret-right"></i>決算発表資料</p>
+            <p><i class="fas fa-caret-right"></i>統合報告書・ディスクロージャー誌</p>
+            <p><i class="fas fa-caret-right"></i>個人投資家のみなさまへ</p>
+          </div>
+        </div>
+        <div class="five-info-sm forth-sm">
+          <div class="five-info-contaier-sm">
+            <img src="https://www.japanpost.jp/images/menu_group_sp.png">
+          </div>
+          <div class="info-text-sm">
+            <h2>日本郵政グループ</h2>
+            <h1>各社情報</h1>
+          </div>
+          <div class="info-text-a-sm">
+            <a><img src="https://www.japanpost.jp/images/logo_group_yuubin_sp.png"></a>
+            <a><img src="https://www.japanpost.jp/images/logo_group_yuucho_sp.png"></a>
+            <a><img src="https://www.japanpost.jp/images/logo_group_kanpo_sp.png"></a>
+          </div>
+        </div>
+        <div class="five-info-sm fifth-sm">
+          <div class="five-info-contaier-sm">
+            <img src="https://www.japanpost.jp/images/menu_csr_sp.png">
+          </div>
+          <div class="info-text-sm">
+            <h2>日本郵政グループ</h2>
+            <h1>CRS情報</h1>
+          </div>
+          <div class="info-text-p-sm">
+            <p><i class="fas fa-caret-right"></i>グループCSRのトピックス</p>
+            <p><i class="fas fa-caret-right"></i>ステークホルダーエンゲージメント</p>
+            <p><i class="fas fa-caret-right"></i>GRIスタンダード対照表</p>
+          </div>
+          <div class="info-text-p-two-sm">
+            <p><i class="fas fa-caret-right"></i>地域社会と共に</p>
+            <p><i class="fas fa-caret-right"></i>地球と共に</p>
+            <p><i class="fas fa-caret-right"></i>人と共に</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="contents-container">
+        <h1>ピックアップコンテンツ</h1>
+        <ul class="contents-top">
+          <li><a><img src="https://www.japanpost.jp/images/pickup_athlete.png"></a></li>
+          <li><a><img src="https://www.japanpost.jp/images/pickup_kanpo.png"></a></li>
+          <li><a><img src="https://www.japanpost.jp/images/pickup_teishin.png"></a></li>
+          <li><a><img src="https://www.japanpost.jp/images/pickup_zipcode.png"></a></li>
+          <li><a><img src="https://www.japanpost.jp/images/pickup_atm.png"></a></li>
+        </ul>
+        <ul class="contents-center">
+          <li><a><img src="https://www.japanpost.jp/assets_c/2018/10/image201810-thumb-autox60-103419.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2018/06/banner_kanponoyado_1-thumb-215xauto-97631.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2017/07/banner_familymart-thumb-215xauto-78211.jpg"></a></li>
+        </ul>
+        <ul class="slick3 contents-center">
+          <li><a><img src="https://www.japanpost.jp/assets_c/2018/10/image201810-thumb-autox60-103419.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2018/06/banner_kanponoyado_1-thumb-215xauto-97631.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2017/07/banner_familymart-thumb-215xauto-78211.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2018/10/image201810-thumb-autox60-103419.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2018/06/banner_kanponoyado_1-thumb-215xauto-97631.jpg"></a></li>
+          <li><a><img src="https://www.japanpost.jp/assets_c/2017/07/banner_familymart-thumb-215xauto-78211.jpg"></a></li>
+        </ul>
+        <div class="contents-bottom"><a><img src="https://www.japanpost.jp/tokyo2020/images/tokyo2020_jp_logo.png"></a></div>
+      </div>
+    </div>
+    <div class="attention">
+      <div class="attention-container">
+        <h1>ご注意ください</h1>
+        <div class="attention-text">
+          <p><i class="fas fa-caret-right"></i><a>日本郵政グループ各社の株式取引に関する投資勧誘にご注意ください</a>-日本郵政</p>
+          <p><i class="fas fa-caret-right"></i><a>郵便局などを装った不審な電話、迷惑メール及びフィッシングサイト等にご注意ください</a>-日本郵政</p>
+          <p><i class="fas fa-caret-right"></i><a class="after">ゆうちょダイレクトのログイン後に不正に登録内容の変更をさせて、情報を盗み取ろうとする犯罪にご注意ください</a>-ゆうちょ銀行</p>
+          <p><i class="fas fa-caret-right"></i><a class="after">レターパックやゆうパックの利用を指定した現金の送付指示には決して応じないでください</a>-日本郵政</p>
+          <p><i class="fas fa-caret-right"></i><a>日本郵政グループの不動産の取引に関する勧誘にはご注意ください</a>-日本郵政</p>
+          <p>（基本的に<a>日本郵政グループの保有する不動産の売却情報</a>に掲載している不動産以外は売却を予定している不動産はありません。）</p>
+        </div>
+      </div>
+    </div>
+    <div class="group">
+      <div class="group-container">
+        <ul>
+          <li><img src="https://www.japanpost.jp/cmn/images/grouplinks.png"></li>
+          <li><a><img src="https://www.japanpost.jp/cmn/images/logo_japanpost.gif"></a></li>
+          <li><a><img src="https://www.japanpost.jp/cmn/images/logo_jpbank.gif"></a></li>
+          <li><a><img src="https://www.japanpost.jp/cmn/images/logo_jplife.gif"></a></li>
+          <div class="top"><p><i class="fas fa-caret-up"></i>このページの先頭へ戻る</p></div>
+        </ul>
+        <div class="top-sm"><i class="fas fa-caret-up"></i></div>
+      </div>
+    </div>
+      <div class="summary">
+        <div class="summary-container">
+          <div class="summary-left">
+            <h1>企業情報</h1>
+            <ul>
+              <li><a><i class="fas fa-caret-right"></i>トップメッセージ</a></li>
+              <li><a><i class="fas fa-caret-right"></i>会社概要</a></li>
+              <li><a><i class="fas fa-caret-right"></i>経営理念・経営方針・ガバナンス等</a></li>
+              <li><a><i class="fas fa-caret-right"></i>お客さま本位の業務運営に関する基本方針</a></li>
+              <li><a><i class="fas fa-caret-right"></i>グループアイデンティティ等</a></li>
+              <li><a><i class="fas fa-caret-right"></i>グループコンプライアンス等</a></li>
+              <li><a><i class="fas fa-caret-right"></i>沿革</a></li>
+              <li><a><i class="fas fa-caret-right"></i>調達情報・広告</a></li>
+              <li><a><i class="fas fa-caret-right"></i>主な事業・関連施設</a></li>
+              <li><a><i class="fas fa-caret-right"></i>日本郵政株式会社の広告</a></li>
+              <li><a><i class="fas fa-caret-right"></i>日本郵政グループ女子陸上部</a></li>
+              <li><a><i class="fas fa-caret-right"></i>東京2020への取組</a></li>
+            </ul>
+            <h1>グループ各社情報</h1>
+            <ul>
+              <li><a><i class="fas fa-caret-right"></i>日本郵便株式会社</a></li>
+              <li><a><i class="fas fa-caret-right"></i>株式会社ゆうちょ銀行</a></li>
+              <li><a><i class="fas fa-caret-right"></i>株式会社かんぽ生命保険</a></li>
+              <li><a><i class="fas fa-caret-right"></i>日本郵政グループのサービス等</a></li>
+            </ul>
+          </div>
+          <div class="summary-center">
+            <h1>株主・投資家のみなさまへ</h1>
+            <ul>
+              <li><a><i class="fas fa-caret-right"></i>IRニュース</a></li>
+              <li><a><i class="fas fa-caret-right"></i>経営方針</a></li>
+              <li><a><i class="fas fa-caret-right"></i>個人投資家のみなさまへ</a></li>
+              <li><a><i class="fas fa-caret-right"></i>財務情報・IR資料</a></li>
+              <li><a><i class="fas fa-caret-right"></i>株式情報</a></li>
+            </ul>
+            <h1>ニュースリリース</h1>
+            <ul>
+              <li><a><i class="fas fa-caret-right"></i>プレスリリース一覧</a></li>
+              <li><a><i class="fas fa-caret-right"></i>お知らせ一覧</a></li>
+              <li><a><i class="fas fa-caret-right"></i>日本郵政株式会社の社長等会見</a></li>
+              <li><a><i class="fas fa-caret-right"></i>民営化以前のプレスリリースなど</a></li>
+            </ul>
+          </div>
+          <div class="summary-right">
+            <h1>CSR</h1>
+            <ul>
+              <li><a><i class="fas fa-caret-right"></i>グループCSRのトピックス</a></li>
+              <li><a><i class="fas fa-caret-right"></i>トップメッセージ</a></li>
+              <li><a><i class="fas fa-caret-right"></i>日本郵政グループCSR基本方針</a></li>
+              <li><a><i class="fas fa-caret-right"></i>グループ・ガバナンス</a></li>
+              <li><a><i class="fas fa-caret-right"></i>SDGs達成に向けた取り組み</a></li>
+              <li><a><i class="fas fa-caret-right"></i>地域社会と共に</a></li>
+              <li><a><i class="fas fa-caret-right"></i>地球と共に</a></li>
+              <li><a><i class="fas fa-caret-right"></i>人と共に</a></li>
+              <li><a><i class="fas fa-caret-right"></i>外部からの評価</a></li>
+              <li><a><i class="fas fa-caret-right"></i>CSRレポート</a></li>
+              <li><a><i class="fas fa-caret-right"></i>CSRムービー</a></li>
+            </ul>
+            <h1>採用情報</h1>
+            <ul>
+              <li><a><i class="fas fa-caret-right"></i>新卒採用</a></li>
+              <li><a><i class="fas fa-caret-right"></i>中途採用</a></li>
+              <li><a class="after"><i class="fas fa-caret-right"></i>アルバイト</a></li>
+              <li><a class="after"><i class="fas fa-caret-right"></i>インターシップ</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <h1>ソーシャルメディア情報</h1>
+            <div class="social-top">
+              <img class="social-top-img" src="https://www.japanpost.jp/images/logo_social_jp.png">
+              <a><img src="https://www.japanpost.jp/images/btn_social_jp_youtube.png"></a>
+              <a><img src="https://www.japanpost.jp/images/btn_social_jp_twitter.png"></a>
+            </div>
+            <div class="social-bottom">
+              <img class="social-bottom-img" src="https://www.japanpost.jp/images/logo_social_athlete.png">
+              <h2>日本郵政グループ女子陸上部</h2>
+              <a><img src="https://www.japanpost.jp/images/btn_social_athlete_youtube.png"></a>
+              <a><img src="https://www.japanpost.jp/images/btn_social_athlete_fb.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="summary-bottom">
+          <div class="right-img"><a><img src="https://www.japanpost.jp/images/h_footermenu.png"></a></div>
+          <div class="left-list">
+            <ul>
+              <li><a href="#">サイトのご利用について</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">アクセシビリティ</a></li>
+              <li><a href="#">ソーシャルメディア</a></li>
+              <li><a href="#">RSSについて</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="list">
+        <div class="list-container">
+          <ul>
+            <li><a href="#"><i class="fas fa-caret-right"></i>サイトのご利用について</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>プライバシーポリシー</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>アクセシビリティ</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>ソーシャルメディア</a></li>
+            <li><a href="#"><i class="fas fa-caret-right"></i>RSSについて</a></li>
+          </ul>
+          <div class="list-bottom">
+            <div class="list-left">
+              <div class="center"><img src="https://www.japanpost.jp/images/logo_social_jp.png"></div>
+              <a><img src="https://www.japanpost.jp/images/btn_social_youtube_sp.png"></a>
+              <a><img src="https://www.japanpost.jp/images/btn_social_twitter_sp.png"></a>
+            </div>
+            <div class="list-right">
+              <div class="center">
+                <img src="https://www.japanpost.jp/images/logo_social_athlete.png">
+                <p>日本郵政グループ<br>女子陸上部</p>
+              </div>
+              <a><img src="https://www.japanpost.jp/images/btn_social_youtube_sp.png"></a>
+              <a><img src="https://www.japanpost.jp/images/btn_social_fb_sp.png"></a>
+            </div>
+          </div>
+          <p class="p">(C) JAPAN POST HOLDINGS</p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-container">
+          <img src="https://www.japanpost.jp/images/h_footer.gif">
+          <img src="https://www.japanpost.jp/cmn/images/h_footer_sp.png">
+          <p>Copyright © Japan Post Holdings Co.,Ltd. All Rights Reserved.</p>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
