@@ -17,20 +17,20 @@ $(function(){
   $('.modal-wrap').hide();
   $('.six-topics ul li a').click(function(){
     $('.modal-wrap').slideUp();
-    $('.six-topics ul li a').css('border-bottom','solid 0px white');
-    $('.six-topics ul li a').css('margin-bottom','0');
+    $('.bd').removeClass('bd');
+    $(this).addClass('bd');
     var number = $('.six-topics ul li a').index($(this));
     console.log($('.six-topics ul li a').index($(this)));
     if($(this).hasClass('show')){
       $('.show').removeClass('show');
       $('.black').hide();
+      $('.bd').removeClass('bd');
     }else{
       $('.show').removeClass('show');
       $(this).addClass('show');
       $('.modal-wrap').eq(number).slideDown();
       $('.black').show();
-      $(this).css('border-bottom','solid 5px #FDB8B8');
-      $(this).css('margin-bottom','-5px');
+
       return false;
     }
   });
@@ -39,8 +39,7 @@ $(function(){
       $('.show').removeClass('show');
       $('.black').hide();
       $('.modal-wrap').slideUp();
-      $('.six-topics ul li a').css('border-bottom','solid 0px white');
-      $('.six-topics ul li a').css('margin-bottom','0');
+      $('.bd').removeClass('bd');
     }else {
 
     }
@@ -49,8 +48,7 @@ $(function(){
     $('.show').removeClass('show');
     $('.black').hide();
     $('.modal-wrap').slideUp();
-    $('.six-topics ul li a').css('border-bottom','solid 0px white');
-    $('.six-topics ul li a').css('margin-bottom','0');
+    $('.bd').removeClass('bd');
   });
   $('.news-left li').eq(0).css('display','none');
   $('.news-left li').eq(1).css('display','flex');
@@ -100,8 +98,7 @@ $(function(){
   });
   $('.six-topics-two ul li a').click(function(){
     $('.modal-wrap').slideUp();
-    $('.six-topics-two ul li a').css('border-bottom','solid 0px white');
-    $('.six-topics-two ul li a').css('margin-bottom','0');
+    $('.bd').removeClass('bd');
     var number = $('.six-topics-two ul li a').index($(this));
     console.log($('.six-topics-two ul li a').index($(this)));
     if($(this).hasClass('show')){
@@ -112,8 +109,7 @@ $(function(){
       $(this).addClass('show');
       $('.modal-wrap').eq(number).slideDown();
       $('.black').show();
-      $(this).css('border-bottom','solid 5px #FDB8B8');
-      $(this).css('margin-bottom','-5px');
+      $(this).addClass('bd');
       return false;
     }
   });
@@ -122,8 +118,7 @@ $(function(){
       $('.show').removeClass('show');
       $('.black').hide();
       $('.modal-wrap').slideUp();
-      $('.six-topics-two ul li a').css('border-bottom','solid 0px white');
-      $('.six-topics-two ul li a').css('margin-bottom','0');
+      $('.bd').removeClass('bd');
     }else {
 
     }
@@ -132,8 +127,7 @@ $(function(){
     $('.show').removeClass('show');
     $('.black').hide();
     $('.modal-wrap').slideUp();
-    $('.six-topics-two ul li a').css('border-bottom','solid 0px white');
-    $('.six-topics-two ul li a').css('margin-bottom','0');
+    $('.bd').removeClass('bd');
   });
   $('.news-left li').eq(0).css('display','none');
   $('.news-left li').eq(1).css('display','flex');
@@ -231,14 +225,15 @@ $(function(){
     });
     var group = $('.group');
       //navの位置
-      var groupTop = group.offset().top;
+        var groupTop = group.offset().top;
       //スクロールするたびに実行
+      console.log(groupTop);
       $(window).scroll(function () {
           var winTop = $(this).scrollTop();
           //スクロール位置がnavの位置より下だったらクラスfixedを追加
-          if (winTop - 1300 >= groupTop) {
+          if (winTop - 1260 >= groupTop) {
               $('.top-sm').addClass('relative')
-          } else if (winTop -1300 <= groupTop) {
+          } else if (winTop - 1260 <= groupTop) {
               $('.top-sm').removeClass('relative')
           }
       });
