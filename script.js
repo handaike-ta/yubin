@@ -249,7 +249,7 @@ $(function(){
           $('.active').removeClass('active');
           $(this).addClass('active');
           $('.ab > li').slideDown();
-          $('.shadow').css('height','138%');
+          $('.shadow').css('height','139%');
         }
       });
       $('.cd > li:first-child').click(function(){
@@ -263,7 +263,7 @@ $(function(){
           $('.active').removeClass('active');
           $(this).addClass('active');
           $('.cd > li').slideDown();
-          $('.shadow').css('height','138%');
+          $('.shadow').css('height','139%');
         }
       });
       $('.ef > li:first-child').click(function(){
@@ -277,7 +277,7 @@ $(function(){
           $('.active').removeClass('active');
           $(this).addClass('active');
           $('.ef > li').slideDown();
-          $('.shadow').css('height','138%');
+          $('.shadow').css('height','139%');
         }
       });
       $('.gh > li:first-child').click(function(){
@@ -291,7 +291,7 @@ $(function(){
           $('.active').removeClass('active');
           $(this).addClass('active');
           $('.gh > li').slideDown();
-          $('.shadow').css('height','138%');
+          $('.shadow').css('height','139%');
         }
       });
       $('.ij > li:first-child').click(function(){
@@ -305,7 +305,7 @@ $(function(){
           $('.active').removeClass('active');
           $(this).addClass('active');
           $('.ij > li').slideDown();
-          $('.shadow').css('height','138%');
+          $('.shadow').css('height','139%');
         }
       });
       $('.kl > li:first-child').click(function(){
@@ -319,7 +319,7 @@ $(function(){
           $('.active').removeClass('active');
           $(this).addClass('active');
           $('.kl > li').slideDown();
-          $('.shadow').css('height','138%');
+          $('.shadow').css('height','139%');
         }
       });
       $('.modal-sm').css('margin-left','100%');
