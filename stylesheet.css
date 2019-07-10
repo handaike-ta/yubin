@@ -52,7 +52,7 @@ ul{
   top:0;
   text-align: center;
   width: 1263px;
-  z-index: 1000;
+  z-index: 100000;
 }
 .two-container{
   display: inline-block;
@@ -194,6 +194,7 @@ header{
   text-align: center;
 }
 .header-right ul li a:hover {
+  cursor: pointer;
   float: right;
   text-decoration: underline;
 }
@@ -203,6 +204,11 @@ header{
   padding: 4px 10px;
   position: relative;
   top:-2px;
+}
+.header-a:hover{
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: underline;
 }
 header input{
   float: right;
@@ -580,7 +586,7 @@ header input{
 /*-----------------------------------------------------*/
 .six-topics{
   background-color: #F7F7F7;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
   overflow: hidden;
   position: relative;
   z-index: 95;
@@ -626,6 +632,10 @@ header input{
   border-bottom:solid 5px #FDB8B8!important;
   margin-bottom: -5px!important;
 }
+.bd{
+  border-bottom:solid 5px #FDB8B8!important;
+  margin-bottom: -5px!important;
+}
 .info a:first-child{
   border-left: none;
 }
@@ -655,6 +665,9 @@ header input{
 }
 .slick-slide{
   background-color: rgb(0, 0, 0);
+}
+.slick-slide:hover{
+  opacity: 0.8;
 }
 .slick-slide img{
   display: block;
@@ -1740,7 +1753,6 @@ header input{
   border-top: solid 1px #eeeeee;
   margin-top: 75px;
   border-bottom: solid 1px #eeeeee;
-  overflow: hidden;
   width: 100%;
 }
 .group ul{
@@ -1785,11 +1797,15 @@ header input{
 .fixed{
   position: absolute;
 }
+.top-sm i{
+  display: none;
+}
 
 /*-------------------------------------------------*/
 @media(max-width:768px){
   .group{
     margin-bottom: 75px;
+    position: relative;
   }
   .group ul{
     flex-wrap: wrap;
@@ -1830,11 +1846,14 @@ header input{
     z-index: 100;
   }
   .top-sm i{
+    display: block;
     padding-left: 15px;
   }
   .relative{
     float: right;
-    position: relative;
+    position: absolute;
+    top: 265px;
+    z-index: 10;
   }
 }
 /*---------------------------------------------------------------*/
@@ -1867,7 +1886,7 @@ header input{
   margin-top: 55px;
   padding: 20px;
 }
-.summary h1:hover, .summary a:hover{
+.summary a:hover{
   cursor: pointer;
   text-decoration: underline;
 }
