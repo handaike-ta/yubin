@@ -103,6 +103,7 @@ ul{
 }
 .six-topics-two ul li a{
   background: #fff;
+  border-bottom: #FDB8B8;
   border-left: 1px solid #CC0000;
   color: #333;
   display: block;
@@ -616,6 +617,7 @@ header input{
 }
 .six-topics ul li a{
   background: #fff;
+  border-bottom: #FDB8B8;
   border-left: 1px solid #CC0000;
   color: #333;
   display: block;
